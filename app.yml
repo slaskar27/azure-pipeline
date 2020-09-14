@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: test
-        image: siddaks.azurecr.io/myapp:v1
+        image: siddaks.azurecr.io/myapp
         imagePullPolicy: Always
 
 ---
