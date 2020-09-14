@@ -113,6 +113,7 @@ stages:
             inputs:
               action: deploy
               namespace: $(k8sNamespaceForPR)
+              inline: '{ "kind": "Deployment", "apiVersion": "apps/v1" }}'
               manifests: |
                 $(Pipeline.Workspace)/manifests/deployment.yml
                 $(Pipeline.Workspace)/manifests/service.yml
