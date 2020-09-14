@@ -14,7 +14,7 @@ spec:
       maxUnavailable: 0
   selector:
     matchLabels:
-      app: myapp
+      name: myapp
   template:
     metadata:
       labels:
