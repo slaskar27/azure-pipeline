@@ -5,7 +5,7 @@ metadata:
   labels:
     name: myapp
 spec:
-  replicas: 1
+  replicas: 2
   minReadySeconds: 60
   strategy:
     type: RollingUpdate
