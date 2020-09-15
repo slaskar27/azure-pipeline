@@ -2,19 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
-  labels:
-    name: myapp
 spec:
   selector:
     matchLabels:
-      name: myapp
+      app: myapp
   template:
     metadata:
       labels:
-        name: myapp
+        app: myapp
     spec:
       containers:
-      - name: test
+      - name: myapp
         image: siddaks.azurecr.io/myapp
         imagePullPolicy: Always
 
@@ -25,7 +23,7 @@ metadata:
   name: myapp
 spec:
   selector:
-    name: myapp
+    app: myapp
   ports:
   - name: port1
     protocol: TCP
