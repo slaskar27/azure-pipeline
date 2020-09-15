@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: siddaks.azurecr.io/myapp-new
+        image: siddaks.azurecr.io/uatrepo
 
 ---
 kind: Service
