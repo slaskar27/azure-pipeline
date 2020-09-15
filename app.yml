@@ -14,7 +14,6 @@ spec:
       containers:
       - name: myapp
         image: siddaks.azurecr.io/myapp
-        imagePullPolicy: Always
 
 ---
 kind: Service
